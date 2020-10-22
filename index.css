@@ -351,6 +351,10 @@ img {
   margin-right: 10px;
 }
 
+.mr-20 {
+  margin-right: 20px;
+}
+
 .full-width {
   width: 100%;
 }
@@ -1004,12 +1008,20 @@ img {
               * ===================================================================
               */
 
-.banner {
+#banner {
   background-image: url('/boost/bg_banner.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
+}
+
+#banner-mobile {
+  display: none;
+}
+
+#covid-response-mobile {
+  display: none;
 }
 
 #mobile-logo {
@@ -1033,7 +1045,7 @@ img {
   background-color: rgba(19, 54, 86, 0.5);
 }
 
-.plans {
+#plans {
   background-image: url('/boost/bg_plans.jpg');
   background-size: cover;
   background-position: center;
@@ -1129,6 +1141,25 @@ img {
   background-color: #fff;
 }
 
+.strikethrough {
+  position: relative;
+}
+.strikethrough:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 4px solid;
+  border-color: #fff;
+
+  -webkit-transform: rotate(-25deg);
+  -moz-transform: rotate(-25deg);
+  -ms-transform: rotate(-25deg);
+  -o-transform: rotate(-25deg);
+  transform: rotate(-25deg);
+}
+
 /* ===================================================================
               * 6.0 :: Footer
               * ===================================================================
@@ -1176,6 +1207,14 @@ article:after {
 }
 
 @media screen and (max-width: 768px) {
+  #banner {
+    display: none;
+  }
+
+  #banner-mobile {
+    display: block !important;
+  }
+
   #header-address {
     display: none;
   }
@@ -1193,6 +1232,15 @@ article:after {
     padding: 10px 30px;
   }
 
+  #covid-response {
+    display: none;
+  }
+
+  #covid-response-mobile {
+    display: block !important;
+    position: relative;
+  }
+
   nav {
     text-align: center;
     border-top: 2px solid #646464;
@@ -1208,6 +1256,30 @@ article:after {
     display: inline-block !important;
     vertical-align: middle;
     color: #fff;
+  }
+
+  #covid-response-mobile {
+    background-image: url('/boost/covid.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+
+  #plans {
+    display: none;
+  }
+
+  #plans-mobile {
+    background-image: url('/boost/bg_plans.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+
+  .plans-mobile-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
   }
 }
 
