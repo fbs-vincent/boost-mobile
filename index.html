@@ -11,7 +11,7 @@
       <div class="container">
         <div class="row">
           <p class="text-white t-right">
-            1234 Main St. St #A Anytown, CA 92399s
+            1234 Main St. St #A Anytown, CA 92399
           </p>
         </div>
       </div>
@@ -20,13 +20,26 @@
     <header class="pd-10 bg-dark-gray">
       <div class="container">
         <div class="row">
-          <div class="d-flex space-between align-items-center">
+          <div id="header-nav" class="d-flex space-between align-items-center">
             <a href="#">
               <img
-                class="width-unset vertical-align-middle"
+                id="desktop-logo"
+                class="vertical-align-middle"
                 src="boost/logo_lg.png"
                 alt=""
             /></a>
+            <a href="#">
+              <img
+                id="mobile-logo"
+                class="vertical-align-middle"
+                src="boost/logo_sm.png"
+                alt=""
+            /></a>
+            <div id="mobile-location">
+              <p class="fs-18">Location Name</p>
+              <p>City Name</p>
+            </div>
+
             <nav>
               <ul class="vertical-align-middle text-white">
                 <li class="mx-15">
@@ -112,7 +125,7 @@
       </div>
     </div>
 
-    <div class="covid-response bg-light-blue text-center text-white py-30">
+    <div class="covid-response bg-orange text-center text-white py-30">
       <div class="container">
         <div class="row">
           <h2 class="fs-32">COVID-19 RESPONSE</h2>
@@ -129,7 +142,10 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
-              <div class="plans-description my-100">
+              <div
+                class="plans-description py-100"
+                style="width: 258px; margin: 0 auto"
+              >
                 <h2 class="text-white mb-30 fs-32">
                   Plans Available on <br />
                   America's Largest <br />
@@ -173,29 +189,35 @@
               </div>
             </div>
             <div class="col-lg-6">
-              <div class="shrink my-60 bg-light-blue">
-                <h2 class="text-white text-center fs-36">
-                  $HRINK <br />
-                  <span class="ff-regular fs-28">YOUR BILL!</span>
-                </h2>
-                <p class="text-dark-blue ff-black text-center">
-                  The longer you stay the less you pay
-                </p>
-                <ul>
-                  <li class="mb-10 ff-regular text-white">
-                    $35/mo after 6 on time payments
-                  </li>
-                  <li class="mb-10 ff-regular text-white">
-                    Unlimited Data, Talk & Text
-                  </li>
-                  <li class="mb-10 ff-regular text-white">Mobile Hotspot</li>
-                  <li class="mb-10 ff-regular text-white">
-                    15GB High Speed Data on Expanded Data Network
-                  </li>
-                </ul>
-                <p class="text-dark-blue ff-black text-center">
-                  Call your local Boost Expert Today!
-                </p>
+              <div class="my-60 px-60">
+                <div class="shrink bg-orange py-60">
+                  <h2 class="text-white text-center fs-36">
+                    $HRINK <br />
+                    <span class="ff-regular fs-28">YOUR BILL!</span>
+                  </h2>
+                  <p class="text-dark-blue ff-black text-center">
+                    The longer you stay the less you pay
+                  </p>
+                  <p class="fs-42 text-dark-blue ff-black text-center">
+                    <sub class="fs-32">$</sub>60
+                  </p>
+                  <hr class="hr-text" data-content="per month" />
+                  <ul class="py-20" style="width: 302px; margin: 0 auto">
+                    <li class="mb-10 ff-regular text-white">
+                      $35/mo after 6 on time payments
+                    </li>
+                    <li class="mb-10 ff-regular text-white">
+                      Unlimited Data, Talk & Text
+                    </li>
+                    <li class="mb-10 ff-regular text-white">Mobile Hotspot</li>
+                    <li class="mb-10 ff-regular text-white">
+                      15GB High Speed Data on Expanded Data Network
+                    </li>
+                  </ul>
+                  <p class="text-dark-blue ff-black text-center">
+                    Call your local Boost Expert Today!
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -219,8 +241,8 @@
                 <p class="fs-42 text-orange ff-black text-center">
                   <sub class="fs-32">$</sub>50
                 </p>
-                <p class="text-center mb-20">______ per month ______</p>
-                <ul>
+                <hr class="hr-text-gray mb-20" data-content="per month" />
+                <ul style="width: 199px; margin: 0 auto">
                   <li class="mb-10 ff-regular text-black">
                     <img
                       class="width-unset mr-10 vertical-align-middle"
@@ -258,12 +280,12 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="price">
+            <div style="margin-top: 107px">
               <p class="fs-42 text-orange ff-black text-center">
                 <sub class="fs-32">$</sub>60
               </p>
-              <p class="text-center mb-20">______ per month ______</p>
-              <ul>
+              <hr class="hr-text-gray mb-20" data-content="per month" />
+              <ul style="width: 200px; margin: 0 auto">
                 <li class="mb-10 ff-regular text-black">
                   <img
                     class="width-unset mr-10 vertical-align-middle"
@@ -319,7 +341,7 @@
       </div>
     </div>
 
-    <div class="phone my-80">
+    <div class="phone my-100">
       <div class="container">
         <div class="row">
           <div class="col-lg-4"><img src="/boost/flyer_b.jpg" alt="" /></div>
@@ -334,28 +356,43 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
-              <h3 class="text-orange fs-28 mb-30 ff-black">Store Info</h3>
-              <div class="address mb-30">
-                <h4 class="fs-18 text-orange ff-thin">Address</h4>
-                <p>1234 Main St. St #A</p>
-                <p>Anytown, CA 92399</p>
-              </div>
-              <div class="phone mb-30">
-                <h4 class="fs-18 text-orange ff-thin">Phone</h4>
-                <p>(555) 867-5309</p>
-              </div>
-              <div class="hours mb-30">
-                <h4 class="fs-18 text-orange ff-thin">Hours</h4>
-                <p>Mon 10:00 AM - 7:00 PM</p>
-                <p>Tues 10:00 AM - 7:00 PM</p>
-                <p>Wed 10:00 AM - 7:00 PM</p>
-                <p>Thurs 10:00 AM - 7:00 PM</p>
-                <p>Fri 10:00 AM - 7:00 PM</p>
-                <p>Sat 10:00 AM - 7:00 PM</p>
-                <p>Sun 10:00 AM - 7:00 PM</p>
+              <div class="py-80" style="width: 145px; margin: 0 auto">
+                <h3 class="text-orange fs-28 mb-30 ff-black">Store Info</h3>
+                <div class="address mb-30">
+                  <h4 class="fs-18 text-orange ff-thin">Address</h4>
+                  <p>1234 Main St. St #A</p>
+                  <p>Anytown, CA 92399</p>
+                </div>
+                <div class="phone mb-30">
+                  <h4 class="fs-18 text-orange ff-thin">Phone</h4>
+                  <p>(555) 867-5309</p>
+                </div>
+                <div class="hours">
+                  <h4 class="fs-18 text-orange ff-thin">Hours</h4>
+                  <p>Mon 10:00 AM - 7:00 PM</p>
+                  <p>Tues 10:00 AM - 7:00 PM</p>
+                  <p>Wed 10:00 AM - 7:00 PM</p>
+                  <p>Thurs 10:00 AM - 7:00 PM</p>
+                  <p>Fri 10:00 AM - 7:00 PM</p>
+                  <p>Sat 10:00 AM - 7:00 PM</p>
+                  <p>Sun 10:00 AM - 7:00 PM</p>
+                </div>
               </div>
             </div>
-            <div class="col-lg-6"></div>
+            <div class="col-lg-6">
+              <div class="my-80">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.954153297169!2d-82.25754768453837!3d34.70633629042349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8858272b1c0968e3%3A0x21ad720dd1a2a25f!2s699%20Fairview%20Rd%2C%20Simpsonville%2C%20SC%2029680%2C%20USA!5e0!3m2!1sen!2sph!4v1603338500639!5m2!1sen!2sph"
+                  width="100%"
+                  height="450"
+                  frameborder="0"
+                  style="border: 0"
+                  allowfullscreen=""
+                  aria-hidden="false"
+                  tabindex="0"
+                ></iframe>
+              </div>
+            </div>
           </div>
         </div>
       </div>
