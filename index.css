@@ -1009,7 +1009,7 @@ img {
               */
 
 #banner {
-  background-image: url('/boost/bg_banner.jpg');
+  background-image: url('./boost/bg_banner.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1046,11 +1046,19 @@ img {
 }
 
 #plans {
-  background-image: url('/boost/bg_plans.jpg');
+  background-image: url('./boost/bg_plans.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
+}
+
+#plans-mobile {
+  display: none;
+}
+
+#shrink-mobile {
+  display: none;
 }
 
 .banner-description {
@@ -1058,7 +1066,7 @@ img {
 }
 
 .contact {
-  background-image: url('/boost/bg_storeinfo.jpg');
+  background-image: url('./boost/bg_storeinfo.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1151,7 +1159,7 @@ img {
   top: 50%;
   right: 0;
   border-top: 4px solid;
-  border-color: #fff;
+  border-color: #133656;
 
   -webkit-transform: rotate(-25deg);
   -moz-transform: rotate(-25deg);
@@ -1259,7 +1267,7 @@ article:after {
   }
 
   #covid-response-mobile {
-    background-image: url('/boost/covid.jpg');
+    background-image: url('./boost/covid.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1271,7 +1279,15 @@ article:after {
   }
 
   #plans-mobile {
-    background-image: url('/boost/bg_plans.jpg');
+    display: block !important;
+  }
+
+  #shrink-mobile {
+    display: block !important;
+  }
+
+  #plans-mobile {
+    background-image: url('./boost/bg_plans.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
