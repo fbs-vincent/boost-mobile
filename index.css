@@ -320,7 +320,7 @@ img {
 }
 
 .my-20 {
-  margin: 20px 0;
+  margin: 20px 0 !important;
 }
 
 .my-30 {
@@ -1061,11 +1061,24 @@ img {
   display: none;
 }
 
+#bring-mobile {
+  display: none;
+}
+
+#hot-deals-mobile {
+  display: none;
+}
+
 .banner-description {
   padding: 40px 30px;
 }
 
-.contact {
+.phone-img {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+#contact {
   background-image: url('./boost/bg_storeinfo.jpg');
   background-size: cover;
   background-position: center;
@@ -1073,8 +1086,12 @@ img {
   height: 100%;
 }
 
-.contact p {
+#contact p {
   color: #fff;
+}
+
+#legalese {
+  display: none;
 }
 
 .price {
@@ -1120,7 +1137,7 @@ img {
   position: relative;
   outline: 0;
   border: 0;
-  color: gray;
+  color: #646464;
   text-align: center;
   height: 1.5em;
   opacity: 0.5;
@@ -1131,7 +1148,7 @@ img {
 .hr-text-gray:before {
   content: '';
   /* background: linear-gradient(to right, transparent, #818078, transparent); */
-  background: gray;
+  background: #646464;
   position: absolute;
   left: 0;
   top: 50%;
@@ -1142,10 +1159,10 @@ img {
   content: attr(data-content);
   position: relative;
   display: inline-block;
-  color: gray;
+  color: #646464;
   padding: 0 0.5em;
   line-height: 1.5em;
-  color: gray;
+  color: #646464;
   background-color: #fff;
 }
 
@@ -1212,6 +1229,10 @@ article:after {
 }
 
 @media screen and (max-width: 1199px) {
+  #banner-list {
+    width: 300px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1294,8 +1315,96 @@ article:after {
     height: 100%;
   }
 
+  #bring {
+    display: none;
+  }
+
   .plans-mobile-overlay {
     background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .price-mobile-1 {
+    border: 8px solid #cacaca;
+  }
+  .price-mobile-2 {
+    border-bottom: 8px solid #cacaca;
+    border-left: 8px solid #cacaca;
+    border-right: 8px solid #cacaca;
+  }
+
+  #hot-deals {
+    display: none;
+  }
+
+  #hot-deals-mobile {
+    background-image: url('./boost/bg_jump_sm.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+
+  #phone {
+    margin: 0 !important;
+  }
+
+  .phone-img {
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+  }
+
+  .phone-img-1 {
+    border: 8px solid #000;
+  }
+  .phone-img-2 {
+    border-left: 8px solid #000;
+    border-right: 8px solid #000;
+    border-bottom: 8px solid #000;
+  }
+  .phone-img-3 {
+    border-left: 8px solid #000;
+    border-right: 8px solid #000;
+    border-bottom: 8px solid #000;
+  }
+
+  #contact h4 {
+    font-family: 'boostnext-black';
+    font-size: 24px;
+  }
+
+  #contact h3 {
+    color: #fff;
+    font-size: 36px;
+  }
+
+  #contact p {
+    font-size: 16px;
+  }
+
+  #bring-mobile {
+    display: block !important;
+  }
+
+  .store-info {
+    padding: 50px 0 !important;
+  }
+
+  .map {
+    margin: 0 !important;
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+  }
+
+  #legalese {
+    padding: 40px 30px 40px 30px;
+  }
+
+  #hot-deals-mobile {
+    display: block !important;
+  }
+
+  #legalese {
+    display: block !important;
   }
 }
 
