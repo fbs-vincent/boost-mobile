@@ -19,10 +19,10 @@
         <div class="row">
           <div id="header-nav">
             <a href="#">
-              <img id="desktop-logo" src="./boost/logo_lg.webp" alt=""
+              <img id="desktop-logo" src="./boost/logo_lg.png" alt=""
             /></a>
             <a href="#">
-              <img id="mobile-logo" src="./boost/logo_sm.webp" alt=""
+              <img id="mobile-logo" src="./boost/logo_sm.png" alt=""
             /></a>
             <div id="mobile-location">
               <p class="fs-18">Location Name</p>
@@ -224,13 +224,6 @@
     </div>
     <div id="plans-mobile">
       <div class="plans-mobile-overlay">
-        <!-- <a
-          style="z-index: 9999"
-          id="call-your-boost-expert"
-          href="#contact"
-          class="text-white ff-regular fs-26 bg-light-blue text-center d-block pd-15 border-radius-max"
-          >Call your Boost expert</a
-        > -->
         <div class="container">
           <div class="row">
             <div class="plans-mobile-description">
@@ -294,7 +287,10 @@
         <div class="row">
           <div class="col-lg-4">
             <div class="bring-img">
-              <img src="./boost/flyer_a.webp" alt="" />
+              <picture>
+                <source srcset="./boost/flyer_a.webp" type="image/webp" />
+                <img class="lazyload" src="./boost/flyer_a.jpg" alt="" />
+              </picture>
             </div>
           </div>
           <div class="col-lg-4">
@@ -372,7 +368,10 @@
       <div class="container">
         <div class="row">
           <div class="bring-mobile-img">
-            <img src="./boost/flyer_a.webp" alt="" />
+            <picture>
+              <source srcset="./boost/flyer_a.webp" type="image/webp" />
+              <img class="lazyload" src="./boost/flyer_a.jpg" alt="" />
+            </picture>
           </div>
           <div class="go-unlimited-mobile">
             <h2>GO UNLIMITED</h2>
@@ -483,17 +482,26 @@
         <div class="row">
           <div class="col-lg-4">
             <div class="phone-img phone-img-1">
-              <img src="./boost/flyer_b.webp" alt="" />
+              <picture>
+                <source srcset="./boost/flyer_b.webp" type="image/webp" />
+                <img class="lazyload" src="./boost/flyer_b.jpg" alt="" />
+              </picture>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="phone-img phone-img-2">
-              <img src="./boost/flyer_c.webp" alt="" />
+              <picture>
+                <source srcset="./boost/flyer_c.webp" type="image/webp" />
+                <img class="lazyload" src="./boost/flyer_c.jpg" alt="" />
+              </picture>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="phone-img phone-img-3">
-              <img src="./boost/flyer_d.webp" alt="" />
+              <picture>
+                <source srcset="./boost/flyer_d.webp" type="image/webp" />
+                <img class="lazyload" src="./boost/flyer_d.jpg" alt="" />
+              </picture>
             </div>
           </div>
         </div>
@@ -530,6 +538,7 @@
             <div class="col-lg-6">
               <div class="map my-80">
                 <iframe
+                  class="lazyload"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.954153297169!2d-82.25754768453837!3d34.70633629042349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8858272b1c0968e3%3A0x21ad720dd1a2a25f!2s699%20Fairview%20Rd%2C%20Simpsonville%2C%20SC%2029680%2C%20USA!5e0!3m2!1sen!2sph!4v1603338500639!5m2!1sen!2sph"
                   width="100%"
                   height="450"
@@ -667,5 +676,13 @@
         </div>
       </div>
     </footer>
+    <a id="call-your-boost-expert" href="#contact" class="btn-cta"
+      >Call your Boost expert</a
+    >
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js"
+      integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
