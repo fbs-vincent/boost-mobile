@@ -244,6 +244,10 @@ img {
   align-items: center;
 }
 
+.align-self-center {
+  align-self: center;
+}
+
 .relative {
   position: relative;
 }
@@ -254,6 +258,16 @@ img {
 
 .fixed {
   position: fixed;
+}
+
+.fs-6-rem {
+  font-size: 6rem;
+  line-height: 1em;
+}
+
+.fs-5-rem {
+  font-size: 5rem;
+  line-height: 1em;
 }
 
 .fs-14 {
@@ -276,8 +290,17 @@ img {
   font-size: 26px;
 }
 
+.lh-3-rem {
+  line-height: 3rem;
+}
+
+.lh-2-rem {
+  line-height: 2rem;
+}
+
 .fs-28 {
   font-size: 28px;
+  line-height: 1em;
 }
 
 .fs-32 {
@@ -350,6 +373,10 @@ img {
 
 .ml-10 {
   margin-left: 10px;
+}
+
+.ml-5 {
+  margin-left: 5px;
 }
 
 .mr-5 {
@@ -1137,7 +1164,7 @@ img {
 
 .price {
   border: 6px solid #f36a22;
-  padding: 18px 0;
+  padding: 27px 0;
 }
 
 .hr-text {
