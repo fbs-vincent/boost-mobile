@@ -297,6 +297,7 @@ img {
 
 .fs-59 {
   font-size: 59px;
+  line-height: 1em;
 }
 
 .mx-10 {
@@ -347,12 +348,52 @@ img {
   margin-left: 15px;
 }
 
+.ml-10 {
+  margin-left: 10px;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
 .mr-10 {
   margin-right: 10px;
 }
 
 .mr-20 {
   margin-right: 20px;
+}
+
+.mr-26 {
+  margin-right: 26px;
+}
+
+.mr-29 {
+  margin-right: 29px;
+}
+
+.mr-35 {
+  margin-right: 35px;
+}
+
+.mr-40 {
+  margin-right: 40px;
+}
+
+.mr-42 {
+  margin-right: 42px;
+}
+
+.mr-46 {
+  margin-right: 46px;
+}
+
+.mr-49 {
+  margin-right: 49px;
+}
+
+.mr-55 {
+  margin-right: 55px;
 }
 
 .full-width {
@@ -1009,7 +1050,7 @@ img {
               */
 
 #banner {
-  background-image: url('./boost/bg_banner.jpg');
+  background-image: url('./boost/bg_banner.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1046,7 +1087,7 @@ img {
 }
 
 #plans {
-  background-image: url('./boost/bg_plans.jpg');
+  background-image: url('./boost/bg_plans.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1079,7 +1120,7 @@ img {
 }
 
 #contact {
-  background-image: url('./boost/bg_storeinfo.jpg');
+  background-image: url('./boost/bg_storeinfo.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1096,7 +1137,7 @@ img {
 
 .price {
   border: 6px solid #f36a22;
-  padding: 22px 0;
+  padding: 18px 0;
 }
 
 .hr-text {
@@ -1178,13 +1219,31 @@ img {
   border-top: 4px solid;
   border-color: #133656;
 
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+}
+
+.strikethrough-white {
+  position: relative;
+}
+.strikethrough-white:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 4px solid;
+  border-color: #133656;
+
   -webkit-transform: rotate(-25deg);
   -moz-transform: rotate(-25deg);
   -ms-transform: rotate(-25deg);
   -o-transform: rotate(-25deg);
   transform: rotate(-25deg);
 }
-
 /* ===================================================================
               * 6.0 :: Footer
               * ===================================================================
@@ -1288,7 +1347,7 @@ article:after {
   }
 
   #covid-response-mobile {
-    background-image: url('./boost/covid.jpg');
+    background-image: url('./boost/covid.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1308,7 +1367,7 @@ article:after {
   }
 
   #plans-mobile {
-    background-image: url('./boost/bg_plans.jpg');
+    background-image: url('./boost/bg_plans.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1337,7 +1396,7 @@ article:after {
   }
 
   #hot-deals-mobile {
-    background-image: url('./boost/bg_jump_sm.jpg');
+    background-image: url('./boost/bg_jump_sm.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
