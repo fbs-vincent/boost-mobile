@@ -23,18 +23,21 @@
   font-family: 'boostnext-thin';
   src: url('./fonts/boostnext-thin-webfont.woff2') format('woff2'),
     url('./fonts/boostnext-thin-webfont.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'boostnext-regular';
   src: url('./fonts/boostnext-regular-webfont.woff2') format('woff2'),
     url('./fonts/boostnext-regular-webfont.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'boostnext-black';
   src: url('./fonts/boostnext-black-webfont.woff2') format('woff2'),
     url('./fonts/boostnext-black-webfont.woff') format('woff');
+  font-display: swap;
 }
 
 /* =================================================================== 

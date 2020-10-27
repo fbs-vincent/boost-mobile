@@ -3,8 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preload"
+      href="./fonts/boostnext-regular-webfont.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/boostnext-regular-webfont.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/boostnext-thin-webfont.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/boostnext-thin-webfont.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/boostnext-black-webfont.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/boostnext-black-webfont.woff"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
     <link rel="stylesheet" href="index.css" />
     <title>Boost Mobile</title>
+    <style></style>
   </head>
   <body>
     <div id="header-address">
@@ -19,17 +63,25 @@
         <div class="row">
           <div id="header-nav">
             <a href="#">
-              <img
-                id="desktop-logo"
-                src="./boost/logo_lg.png"
-                alt="boost-mobile-logo-large"
-            /></a>
+              <picture>
+                <source srcset="./boost/logo_lg.webp" type="image/webp" />
+                <img
+                  id="desktop-logo"
+                  data-src="./boost/logo_lg.png"
+                  alt="boost-mobile-logo-large"
+                />
+              </picture>
+            </a>
             <a href="#">
-              <img
-                id="mobile-logo"
-                src="./boost/logo_sm.png"
-                alt="boost-mobile-logo-small"
-            /></a>
+              <picture>
+                <source srcset="./boost/logo_sm.webp" type="image/webp" />
+                <img
+                  id="mobile-logo"
+                  data-src="./boost/logo_sm.png"
+                  alt="boost-mobile-logo-small"
+                />
+              </picture>
+            </a>
             <div id="mobile-location">
               <p class="fs-18">Location Name</p>
               <p>City Name</p>
@@ -604,7 +656,7 @@
               <div class="map my-80">
                 <iframe
                   class="lazyload"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.954153297169!2d-82.25754768453837!3d34.70633629042349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8858272b1c0968e3%3A0x21ad720dd1a2a25f!2s699%20Fairview%20Rd%2C%20Simpsonville%2C%20SC%2029680%2C%20USA!5e0!3m2!1sen!2sph!4v1603338500639!5m2!1sen!2sph"
+                  data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.954153297169!2d-82.25754768453837!3d34.70633629042349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8858272b1c0968e3%3A0x21ad720dd1a2a25f!2s699%20Fairview%20Rd%2C%20Simpsonville%2C%20SC%2029680%2C%20USA!5e0!3m2!1sen!2sph!4v1603338500639!5m2!1sen!2sph"
                   width="100%"
                   height="450"
                   frameborder="0"
@@ -745,9 +797,24 @@
       >Call your Boost expert</a
     >
     <script
+      defer
       src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js"
       integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg=="
       crossorigin="anonymous"
     ></script>
+    <script>
+      function deferIframe() {
+        var iframeElem = document.getElementsByTagName('iframe');
+        for (var i = 0; i < iframeElem.length; i++) {
+          if (iframeElem[i].getAttribute('data-src')) {
+            iframeElem[i].setAttribute(
+              'src',
+              iframeElem[i].getAttribute('data-src')
+            );
+          }
+        }
+      }
+      window.onload = deferIframe;
+    </script>
   </body>
 </html>
